@@ -1,0 +1,153 @@
+/* Color Variables */
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--paleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    max-width: 327px;
+    height: 567px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 22px;
+}
+
+
+
+.main_img {
+    width: 100%;
+    max-width: 327px;
+    height: 160px;
+    margin-bottom: 12px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+
+.text_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summary_title {
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--darkBlue);
+}
+
+.summary_description {
+    margin: 0 auto;
+    font-weight: 500;
+    color: var(--desaturatedBlue);
+    line-height: 1.7;
+    font-size: 15px;
+    width: 76%;
+    padding-bottom: 23px;
+}
+
+.product_cart {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 278px;
+    height: 81px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 27px;
+    background-color: var(--veryPaleBlue);
+    border-radius: 18px;
+
+}
+
+.icon {
+    width: 49px;
+    height: 49px;
+    margin-left: 16px;
+}
+
+.product_name-price {
+    font-size: 14px;
+    color: var(--desaturatedBlue);
+    line-height: 1.5;
+    position: relative;
+    left: -15px;
+}
+
+.bold_text {
+    color: var(--darkBlue);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.product_change {
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 16px;
+    color: var(--brightBlue);
+}
+
+.buttons_container {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 278px;
+    margin-left: 24px;
+}
+
+.button_payment {
+    height: 50px;
+    margin-bottom: 23px;
+    border: none;
+    background-color: var(--brightBlue);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 11px;
+    width: 100%;
+
+}
+
+.button_cancel {
+    border: none;
+    background-color: white;
+    color: var(--desaturatedBlue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.button_cancel:hover {
+    color: var(--darkBlue);
+}
