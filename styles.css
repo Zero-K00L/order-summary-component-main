@@ -18,6 +18,8 @@ html {
 }
 
 body {
+    width: 375px;
+    height: 268px;
     margin: 0 auto;
     padding: 0;
     background-color: var(--paleBlue);
@@ -66,13 +68,15 @@ body {
 }
 
 .summary_description {
+    width: 76%;
     margin: 0 auto;
-    font-weight: 500;
+    padding-bottom: 23px;
+    position: relative;
+    top: 2px;
     color: var(--desaturatedBlue);
     line-height: 1.7;
     font-size: 15px;
-    width: 76%;
-    padding-bottom: 23px;
+    font-weight: 500;
 }
 
 .product_cart {
@@ -85,9 +89,10 @@ body {
     margin-left: 24px;
     margin-right: 24px;
     margin-bottom: 27px;
+    position: relative;
+    top: 2px;
     background-color: var(--veryPaleBlue);
     border-radius: 18px;
-
 }
 
 .icon {
@@ -115,10 +120,12 @@ body {
     font-weight: 700;
     margin-right: 16px;
     color: var(--brightBlue);
+    text-underline-offset: 1px;
 }
 
 .product_change:hover {
-    color: white;
+    color: #766CF1;
+    text-decoration: none;
 }
 
 .buttons_container {
@@ -143,10 +150,11 @@ body {
     border-radius: 11px;
     text-align:center;
     text-decoration: none;
+    box-shadow: 1px 6px 26px -9px var(--brightBlue);
 }
 
 .button_payment:hover {
-    background-color: var(--brightBlue);
+    background-color: #766CF1;
 }
 
 .button_cancel {
