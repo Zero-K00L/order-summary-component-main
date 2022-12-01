@@ -179,7 +179,8 @@ body {
 @media only screen and (min-width: 992px) {
 
     body {
-        
+        background-image: url("images/pattern-background-desktop.svg");
+        height: 31.8125rem;
     } 
     
     .main {
