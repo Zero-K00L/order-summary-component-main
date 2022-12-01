@@ -121,6 +121,7 @@ body {
     margin-right: 16px;
     color: var(--brightBlue);
     text-underline-offset: 1px;
+    transition: 150ms ease-in-out;
 }
 
 .product_change:hover {
@@ -151,6 +152,7 @@ body {
     text-align:center;
     text-decoration: none;
     box-shadow: 1px 6px 26px -9px var(--brightBlue);
+    transition: background-color 150ms ease-in-out;
 }
 
 .button_payment:hover {
@@ -166,8 +168,84 @@ body {
     font-size: 15px;
     text-align: center;
     text-decoration: none;
+    transition: color 150ms ease-in-out;
 }
 
 .button_cancel:hover {
     color: var(--darkBlue);
+}
+
+/* Media Query */
+
+/* Large devices(laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main {
+        max-width: 450px;
+        height: 697px;
+    }
+
+    .main_img {
+        max-width: 450px;
+        height: 220px;
+    }
+
+    .summary_title {
+        font-size: 28px;
+        position: relative;
+        top: 9px;
+    }
+
+    .summary_description {
+        font-size: 16.5px;
+        line-height: 1.6;
+        top: 6px;
+    }
+
+    .product_cart {
+        max-width: 354px;
+        height: 98px;
+        margin-left: 49px;
+        margin-right: 49px;
+    }
+
+    .icon {
+        position: relative;
+        left: 5px;
+    }
+
+    .product_name-price {
+        font-size: 16.5px;
+        left: -40px;
+        line-height: 1.6;
+    }
+
+    .bold_text {
+        font-size: 16.5px;
+        font-weight: 700;
+    }
+
+    .product_change {
+        font-size: 14px;
+        position: relative;
+        left: -11px;
+    }
+
+    .buttons_container {
+        max-width: 354px;
+        margin-left: 49px;
+        position: relative;
+        top: 8px;
+        left: -2px;
+    }
+
+    .button_payment {
+        max-width: 354px;
+    }
+
+    .button_cancel {
+        position: relative;
+        top: 8px;
+        left: -1px;
+    }
+
 }
